@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Posters</title>
+    <title>Movie Poster Project</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
+    <!-- Movie Poster Content Below -->
+    <!-- TODO Add Stop Button Click event -->
+    <div class="container">
+        <button onClick="stopSnippet()" >Stop Song</button>
+        <!-- Gallery of Images Below -->
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1" id="fig1" onClick = "event.stopPropagations(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/Us-poster.jpg" alt="I got five on it">
+            </figure>
+            <figure class="gallery__item gallery__item--2" id="fig2" onClick = "event.stopPropagations(); getSong(this.id, event">
+                <img class="gallery__img" src="images/badboys-poster.jpg" alt="bad boy for life">
+            </figure>
+            <figure class="gallery__item gallery__item--3" id="fig3">
+                <img class="gallery__img" src="images/color-purple-poster.jpg" alt="fool of me">
+            </figure>
+            <figure class="gallery__item gallery__item--4" id="fig4">
+                <img class="gallery__img" src="images/harriet-poster.jpg" alt="stand up">
+            </figure>
+            <figure class="gallery__item gallery__item--5" id="fig5">
+                <img class="gallery__img" src="images/ray-poster.jpg" alt="I've got a woman">
+            </figure>
+            <figure class="gallery__item gallery__item--6" id="fig6">
+                <img class="gallery__img" src="images/what'slove-poster.jpg" alt="proud mary">
+            </figure>
+        </div>
+    </div>
 
-
-
-
-    <script src="js/main.js"></script>
 </body>
 </html>
